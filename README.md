@@ -44,6 +44,8 @@ This aim of this project is to calculate simplified taxi routes using parallel G
     "b": 199
    }
   },` ...
+  
+GeoJSON files are in the standard format, with the id equal to the taxi number, and randomly generated rgb values to differentiate taxis on the map.
 
 ## Example plaintext coordinates file:
 `116.47602081298827,39.82013946676259`  
@@ -52,4 +54,7 @@ This aim of this project is to calculate simplified taxi routes using parallel G
 `116.40220642089842,39.935802707704816`   
 ...
 
+Coordinates in "longitude,latitude" form, note there is no space between them.
+
+## Resources
 This project uses Python v3.6, the Python GeoJSON library available [here](https://github.com/frewsxcv/python-geojson), and the [T-Drive taxi data](https://www.microsoft.com/en-us/research/publication/t-drive-trajectory-data-sample/?from=https%3A%2F%2Fresearch.microsoft.com%2Fapps%2Fpubs%2F%3Fid%3D152883) by Zheng et al.
