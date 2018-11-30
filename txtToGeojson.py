@@ -37,10 +37,10 @@ threshold = datetime.timedelta(minutes=15)
 def save_geojson(features):
 	print("Saving to GeoJSON format...")
 	feature_coll = geojson.FeatureCollection(features)
-	with open("./result.geojson", 'a') as output:
+	with open("output_data/result.geojson", 'a') as output:
 		geojson.dump(feature_coll, output, indent=1)
 
-with open("./result.geojson", 'w') as output:
+with open("output_data/result.geojson", 'w') as output:
 	output.seek(0)
 	output.truncate()
 

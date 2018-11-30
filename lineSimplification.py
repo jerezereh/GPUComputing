@@ -64,7 +64,7 @@ def isLeftTurn( p1,p2,p3):
         return -1
 
 
-def save_geojson(features, filename="./result.geojson"):
+def save_geojson(features, filename="output_data/result.geojson"):
 	print("Saving to GeoJSON format...")
 	feature_coll = geojson.FeatureCollection(features)
 	with open(filename, 'w') as output:
@@ -116,4 +116,4 @@ for i in range(len(linestrings)):
 	feature = TaxiTrajectory(ids[i], linestrings[i])
 	features.append(feature)
 
-save_geojson(features, "./simplified_features.geojson")
+save_geojson(features, "output_data/simplified_features.geojson")
