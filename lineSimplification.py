@@ -4,7 +4,6 @@ import geojson
 import random
 
 # input: geojson file, file of coordinates to check for
-# check_file also geojson file, has point features that will be read
 # output: new geojson file with new, simplified linestrings
 
 
